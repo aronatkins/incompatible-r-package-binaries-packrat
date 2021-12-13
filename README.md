@@ -32,6 +32,15 @@ R -s -f bootstrap.R
 R -s -f install.R
 ```
 
+The `run.R` script adjusts the `repos` option to reference either the regular
+repository URL or one that can supply binary Linux packages. The
+`packrat.lock` is rewritten to reference this target repository.
+
+The [`renv`
+variation](https://github.com/aronatkins/incompatible-r-package-binaries) of
+this example does not adjust its lockfile because `renv` automatically detects
+and pulls binaries from RSPM.
+
 ```bash
 # Successfully run an httpuv server. Control-C to stop.
 R -s -f run.R
