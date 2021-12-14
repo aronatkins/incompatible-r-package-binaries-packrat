@@ -12,4 +12,8 @@ remotes::install_version("Rcpp", version = "1.0.6", upgrade = "never")
 # version before rcpp-1.0.7 requirement
 remotes::install_version("httpuv", version = "1.6.2", upgrade = "never")
 
+install.packages("shiny", type = "source")
+install.packages("rsconnect", type = "source")
+
+rsconnect::writeManifest()
 packrat::snapshot()

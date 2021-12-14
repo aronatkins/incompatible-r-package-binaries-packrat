@@ -66,8 +66,14 @@ To clean-up and retry this experiment, run the following within this
 repository:
 
 ```bash
-rm -rf .Rprofile packrat
+rm -rf .Rprofile packrat manifest.json
 ```
 
 This example uses `packrat` to demonstrate the problem, but its use is not
 required.
+
+Should you want a Shiny application to deploy:
+
+```bash
+tar zcf bundle.tar.gz app.R manifest.json
+```
