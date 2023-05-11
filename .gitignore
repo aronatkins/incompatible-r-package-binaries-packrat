@@ -1,5 +1,7 @@
 .Rprofile
 .Rproj.user
+.Rhistory
 packrat
 bundle.tar.gz
 manifest.json
+packrat/lib*/
